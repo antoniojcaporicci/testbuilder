@@ -20,7 +20,7 @@
   var firstSix = parseInt(numArray[0] + numArray[1] + numArray[2] + numArray[3] + numArray[4] + numArray[5]) 
   var firstThree = parseInt(numArray[0] + numArray[1] + numArray[2])
   var firstFour = parseInt(numArray[0] + numArray[1] + numArray[2] + numArray[3])
-  var firstFour = parseInt(numArray[0] + numArray[1] + numArray[2] + numArray[4])
+  //var firstFour = parseInt(numArray[0] + numArray[1] + numArray[2] + numArray[4])
 
 
 
@@ -33,8 +33,7 @@
   	  	return "American Express"
   	  }
   //4903, 4905, 4911, 4936
-  }else if(numArray[0] === "4" && firstFour !== 4903 && firstFour !== 4905 && firstFour !== 4911 && firstFour !== 4936){
-  }else if(numArray[0] === "4"){
+  }else if(firstFour !== 4903 && firstFour !== 4905 && firstFour !== 4911 && firstFour !== 4936 && numArray[0] === "4"){
   	if(numArray.length === 13 || numArray.length === 16 || numArray.length === 19){
   		return "Visa"
   	}
